@@ -51,20 +51,36 @@ const Main = () => {
         ) : (
           <>
             <Header />
-            <Greeting />
-            <Skills />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
-            <Projects />
-            <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
-            <Profile />
-            <Footer />
+            <main id="main-content" role="main">
+              <Greeting />
+              <section id="skills" aria-label="Skills Section">
+                <Skills />
+              </section>
+              <StackProgress />
+              <section id="education" aria-label="Education Section">
+                <Education />
+              </section>
+              <section id="experience" aria-label="Work Experience Section">
+                <WorkExperience />
+              </section>
+              <section id="projects" aria-label="Projects Section">
+                <Projects />
+              </section>
+              <StartupProject />
+              <section id="achievements" aria-label="Achievements Section">
+                <Achievement />
+              </section>
+              <section id="blogs" aria-label="Blog Posts Section">
+                <Blogs />
+              </section>
+              <section id="talks" aria-label="Talks Section">
+                <Talks />
+              </section>
+              <Twitter />
+              <Podcast />
+              <Profile />
+              <Footer />
+            </main>
             <ScrollToTopButton />
           </>
         )}

@@ -1,50 +1,48 @@
-/* Change colors in this file to style to your needs on a global level. 
-Certain colors are used for different and multiply types of elements. 
-For greater control over colors visit each components .scss file. */
+/* Sunny Keshri - Modern Professional Color Scheme */
 
-// button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
-$topButtonHover: #000;
+// button colors - Modern Blue Gradient
+$buttonColor: #1a73e8;
+$buttonHover: #1765cc;
+$topButtonHover: #1a73e8;
 
 // text colors light theme
-$titleColor: #000000;
-$textColor: #000000;
-$subTitle: #868e96;
-$cardSubtitle: #666666;
-$talkCardSubTitle: #7f8287;
-$blogCardTitleColor: #262626;
+$titleColor: #0d1b2a;
+$textColor: #1a202c;
+$subTitle: #5a6c7d;
+$cardSubtitle: #718096;
+$talkCardSubTitle: #4a5568;
+$blogCardTitleColor: #1a202c;
 
 // text color dark theme
-$textColorDark: #ffffff;
+$textColorDark: #f7fafc;
 
 // toggle switch colors
-$toggleCheck: #2196f3;
-$toggleSwitchSliderBG: #ccc;
+$toggleCheck: #1a73e8;
+$toggleSwitchSliderBG: #cbd5e0;
 
 // githubRepo specific colors
-$githubRepoCardLanguageColorBG: #0000ff;
-$githubRepoCardColor: rgb(88, 96, 105);
-$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
-$githubRepoCardRepoNameColor: rgb(36, 41, 46);
-$githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: #6c63ff;
+$githubRepoCardLanguageColorBG: #1a73e8;
+$githubRepoCardColor: rgb(55, 65, 81);
+$githubRepoCardRepoCardStatsColor: rgb(107, 114, 128);
+$githubRepoCardRepoNameColor: rgb(13, 27, 42);
+$githubProfileCardLocationTS: #e0f2fe;
+$githubProfileCardBorder: #1a73e8;
 
 // light background colors
-$lightBackground1: #fff;
-$lightBackground2: rgb(255, 255, 255);
-$lightBackground3: #f5f2f4;
-$blogCardContainerColor: #586069;
+$lightBackground1: #ffffff;
+$lightBackground2: #f8fafc;
+$lightBackground3: #e8eef7;
+$blogCardContainerColor: #475569;
 // dark background colors
-$darkBackground: #171c28;
+$darkBackground: #0f172a;
 
 // light theme box shadows
-$lightBoxShadowDark: rgba(0, 0, 0, 0.2);
-$lightBoxShadow: rgba(0, 0, 0, 0.1);
-$lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
+$lightBoxShadowDark: rgba(26, 115, 232, 0.15);
+$lightBoxShadow: rgba(26, 115, 232, 0.08);
+$lightBoxShadowDarker: rgba(26, 115, 232, 0.2);
 
 // dark theme box shadows
-$darkBoxShadow: #d9dbdf;
+$darkBoxShadow: #1a73e8;
 $darkBoxShadow2: #ffffff;
 
 // linear gradients

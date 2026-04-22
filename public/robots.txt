@@ -1,2 +1,24 @@
-# https://www.robotstxt.org/robotstxt.html
+# Robots.txt for Sunny Keshri Portfolio - Full Stack Developer
+# Optimized for search engine crawling and discoverability
+
 User-agent: *
+Allow: /
+Allow: /static/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+
+# Sitemap location for better indexing
+Sitemap: https://sunnykeshri.dev/sitemap.xml
+

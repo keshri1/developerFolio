@@ -180,3 +180,62 @@
     font-size: 12px;
   }
 }
+
+/* Accessibility Improvements */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: $buttonColor;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid white;
+  outline-offset: -4px;
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.theme-toggle-btn:focus {
+  outline: 2px solid $buttonColor;
+  outline-offset: 2px;
+}
+
+.theme-toggle-btn:hover {
+  background-color: rgba(26, 115, 232, 0.1);
+}
+
+/* Enhanced Focus Styles for Accessibility */
+.header a:focus,
+.header button:focus {
+  outline: 2px solid $buttonColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.header li a {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.header li a:hover,
+.header li a:focus {
+  background-color: rgba(26, 115, 232, 0.1) !important;
+  color: $buttonColor !important;
+}

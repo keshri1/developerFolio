@@ -22,10 +22,11 @@ export default function Greeting() {
             <div>
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
+                itemProp="name"
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                <span className="wave-emoji" aria-hidden="true">{emoji("👋")}</span>
               </h1>
               <p
                 className={
@@ -33,18 +34,21 @@ export default function Greeting() {
                     ? "dark-mode greeting-text-p"
                     : "greeting-text-p subTitle"
                 }
+                itemProp="jobTitle"
               >
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="Contact me" href="#contact" aria-label="Contact me button" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
+                    href="https://drive.google.com/file/d/12o_6i9AnACAnlm-pohpARMtuGVBWP9a5/view?usp=share_link"
                     download="Resume.pdf"
+                    target="_blank"
                     className="download-link-button"
+                    aria-label="Download Sunny Keshri's resume as PDF"
                   >
                     <Button text="Download my resume" />
                   </a>
@@ -57,8 +61,8 @@ export default function Greeting() {
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                alt="Portrait of Sunny Keshri, Senior Full Stack Developer with laptop"
+                src={require("../../assets/images/developerIllustration.svg")}
               ></img>
             )}
           </div>
