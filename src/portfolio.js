@@ -20,44 +20,39 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Sunny Keshri",
+  title: "Hi 👋, I'm Sunny Keshri",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Senior Software Engineer with 8+ years of experience building scalable, data-intensive platforms. Expert in React, Next.js, Node.js, Kafka, and event-driven architectures. Leading frontend initiatives at Wipro for UnitedHealth Group, processing millions of clinical records. Specialized in designing intuitive data-driven UIs and high-performance web applications."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/12o_6i9AnACAnlm-pohpARMtuGVBWP9a5/view?usp=share_link",
+  displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  github: "https://github.com/keshri1",
+  linkedin: "https://www.linkedin.com/in/keshri1/",
+  gmail: "mailtokeshri1@gmail.com",
+  display: true
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Can Do",
+  subTitle: "SENIOR FULL STACK ENGINEER BUILDING DATA-INTENSIVE PLATFORMS WITH REAL-TIME PROCESSING",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design & build scalable frontend systems for healthcare and fintech platforms processing millions of records"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Architect event-driven systems using Kafka, Airflow, and real-time data pipelines with GraphQL"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "⚡ Lead frontend teams on global platforms serving UnitedHealth Group, American Express, and PayPal"
+    ),
+    emoji("⚡ Implement data-driven UIs with TypeScript, React, Next.js, and modern architectural patterns")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,56 +60,68 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
+      skillName: "TypeScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "React.js",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "Next.js",
+      fontAwesomeClassname: "fab fa-nextjs"
+    },
+    {
+      skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "HTML5",
+      fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "CSS3",
+      fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sql-database",
+      skillName: "GraphQL",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
+      skillName: "Kafka",
+      fontAwesomeClassname: "fas fa-stream"
+    },
+    {
+      skillName: "Airflow",
+      fontAwesomeClassname: "fas fa-arrows-alt"
+    },
+    {
+      skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "Snowflake",
+      fontAwesomeClassname: "fas fa-snowflake"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "AKS",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
+      skillName: "Jenkins",
+      fontAwesomeClassname: "fas fa-cog"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Selenium",
+      fontAwesomeClassname: "fas fa-flask"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +133,37 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Siddaganga Institute of Technology, Tumkur, Karnataka, India",
+      // logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Bachelor of Engineering (B.E.) - Information Science Engineering",
+      duration: "August 2014 - June 2018",
+      desc: "Aggregate - 8.3/10, First Class with Distinction",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "D.A.V. Public School, Bokaro, Jharkhand, India",
+      // logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Senior Secondary (XII) - Science",
+      duration: "March 2012 - March 2014",
+      desc: "Aggregate - 88%, First Class with Distinction",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    {
+      schoolName: "Bishop Westcott Boys School, Ranchi, Jharkhand, India",
+      // logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Secondary (X)",
+      duration: "March 2011 - March 2012",
+      desc: "Aggregate - 85%, First Class with Distinction",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     }
   ]
 };
@@ -153,16 +174,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Frontend & UI Development", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Data Platforms & Real-time Systems",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Cloud & DevOps",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +195,55 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Technical Lead",
+      company: "Wipro (Client: UnitedHealth Group)",
+      // companylogo: require("./assets/images/wriproLogo.png"),
+      date: "Feb 2025 - Present",
+      desc: "Leading frontend development for ECDH (External Clinical Data Hub), an Optum Data Exchange Platform processing millions of clinical records in real-time.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and built a rule-based visual engine for Kafka-driven data routing pipelines, reducing manual cohort identification from 40 minutes to near real-time",
+        "Architected a no-code clinical data discovery UI enabling non-technical users to query complex healthcare datasets with FHIR abstractions",
+        "Integrated Airflow pipelines with Snowflake data warehouses for automated data processing across enterprise systems",
+        "Collaborated with backend and data teams on REST APIs for rule execution and event-driven workflows"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Senior Associate (Frontend)",
+      company: "Cognizant (Client: American Express)",
+      // companylogo: require("./assets/images/cognizantLogo.png"),
+      date: "Jan 2022 - Feb 2025",
+      desc: "Developed scalable frontend systems for global credit card application platforms across multiple regions.",
+      descBullets: [
+        "Built reusable UI components and frameworks adopted across international markets",
+        "Improved customer onboarding experience, contributing to 20% increase in new registrations",
+        "Integrated analytics tools (Adobe Analytics, ContentSquare) for behavioral tracking and UX optimization",
+        "Implemented A/B testing strategies to improve conversion rates and user retention",
+        "Established Selenium and Cucumber automation frameworks integrated with Jenkins CI/CD pipelines"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Programmer Analyst",
+      company: "Tata Consultancy Services (Client: PayPal)",
+      // companylogo: require("./assets/images/tcsLogo.png"),
+      date: "Oct 2020 - Jan 2022",
+      desc: "Developed UI for PayPal's internal virtual credit card platform using design system frameworks.",
+      descBullets: [
+        "Improved application security by identifying and fixing vulnerabilities",
+        "Contributed to automation testing and cross-team debugging initiatives",
+        "Implemented responsive UI components for multi-region support"
+      ]
+    },
+    {
+      role: "Software Engineer",
+      company: "Tata Consultancy Services",
+      // companylogo: require("./assets/images/tcsLogo.png"),
+      date: "Oct 2018 - Jan 2020",
+      desc: "Worked on enterprise applications for financial services clients.",
+      descBullets: [
+        "Contributed to frontend development using React and modern JavaScript frameworks",
+        "Participated in automation testing and quality assurance initiatives",
+        "Collaborated on building scalable financial applications"
+      ]
     }
   ]
 };
@@ -239,7 +286,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -300,7 +347,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +371,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +390,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +403,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -372,8 +419,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91-8951575173",
+  email_address: "mailtokeshri1@gmail.com"
 };
 
 // Twitter Section
@@ -383,7 +430,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
