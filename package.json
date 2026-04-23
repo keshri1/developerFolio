@@ -1,5 +1,5 @@
 {
-  "homepage": "https://developerfolio.js.org/",
+  "homepage": "/",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +23,9 @@
   "scripts": {
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
+    "fetch": "node fetch.js",
+    "build-only": "react-scripts build",
+    "build": "npm run fetch 2>/dev/null || true && npm run build-only",
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

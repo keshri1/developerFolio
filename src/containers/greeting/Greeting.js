@@ -47,6 +47,7 @@ export default function Greeting() {
                     href="https://drive.google.com/file/d/12o_6i9AnACAnlm-pohpARMtuGVBWP9a5/view?usp=share_link"
                     download="Resume.pdf"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="download-link-button"
                     aria-label="Download Sunny Keshri's resume as PDF"
                   >
