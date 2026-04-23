@@ -1,7 +1,13 @@
 fs = require("fs");
 const https = require("https");
 process = require("process");
-require("dotenv").config();
+
+// Try to load .env, but don't fail if it's missing (common in Vercel)
+try {
+  require("dotenv").config();
+} catch (e) {
+  console.log("dotenv not found or error loading .env — proceeding without it");
+}
 
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
