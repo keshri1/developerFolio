@@ -2,7 +2,13 @@ fs = require("fs");
 const https = require("https");
 process = require("process");
 
-// Try to load .env, but don't fail if it's missing (common in Vercel)
+// Skip fetch.js on Vercel (use static profile.json fallback instead)
+if (process.env.VERCEL) {
+  console.log("Running on Vercel — skipping fetch.js (using static profile.json)");
+  process.exit(0);
+}
+
+// Try to load .env, but don't fail if it's missing (common in CI/CD)
 try {
   require("dotenv").config();
 } catch (e) {

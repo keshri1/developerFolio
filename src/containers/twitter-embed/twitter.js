@@ -1,15 +1,10 @@
-import React, {Suspense, useContext, useEffect} from "react";
+import {useContext, useEffect} from "react";
 import "./twitter.scss";
-import Loading from "../loading/Loading";
-import {TwitterTimelineEmbed} from "react-twitter-embed";
 import {twitterDetails} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
-const renderLoader = () => <Loading />;
 const cantDisplayError =
   "<div className='centerContent'><h2>Can't load? Check privacy protection settings</h2></div>";
-
-var widthScreen = window.screen.width;
 
 // If the Twitter iframe hasn't loaded within 10s after mount, replace with a friendly error.
 function startTwitterTimeout() {
@@ -22,7 +17,7 @@ function startTwitterTimeout() {
 }
 
 export default function Twitter() {
-  const {isDark} = useContext(StyleContext);
+  useContext(StyleContext);
 
   useEffect(() => {
     const tid = startTwitterTimeout();
