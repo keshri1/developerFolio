@@ -1,0 +1,105 @@
+@import "./globalColor";
+
+* {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $lightBackground1;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App.dark-mode {
+  background-color: $darkBackground;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: $appHeaderBG;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.625rem + 2vmin);
+  color: $textColorDark;
+}
+
+.App-link {
+  color: $appLink;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+/* Main Content Area for Accessibility */
+main {
+  width: 100%;
+}
+
+section {
+  scroll-margin-top: 100px;
+  transition: all 0.3s ease;
+}
+
+/* Global Accessibility Improvements */
+::focus-visible {
+  outline: 2px solid $buttonColor;
+  outline-offset: 2px;
+}
+
+/* Enhanced Typography for Readability */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  word-spacing: 0.05em;
+}
+
+p, li, span {
+  line-height: 1.6;
+}
+
+/* Improved Button Focus States */
+button, a {
+  transition: all 0.2s ease;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid $buttonColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Performance Optimization - Image Loading */
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container Queries Support */
+@supports (container-type: inline-size) {
+  main {
+    container-type: inline-size;
+  }
+}
