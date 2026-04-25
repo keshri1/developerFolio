@@ -1,0 +1,11 @@
+{
+  "data": {
+    "user": {
+      "id": 1,
+      "name": "Sunny Keshri",
+      "bio": "Senior Software Engineer with 8+ years of experience building scalable, data-intensive platforms using React, Next.js, Node.js, Kafka, and Airflow.",
+      "location": "Bangalore, India",
+      "avatarUrl": "https://github.com/keshri1.png"
+    }
+  }
+}
